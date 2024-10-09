@@ -1,0 +1,93 @@
+{% extends 'base.html' %}
+
+{% load static %}  <!-- Load static files -->
+
+{% block title %} Services {% endblock title %}
+
+{% block body %}
+
+<div class="container my-5">
+    <h1 class="text-center mb-4">Our Services</h1>
+    
+    <div class="row">
+        <div class="col-md-4 mb-4">
+            <div class="card shadow-sm">
+                <img src="{% static  %}" class="card-img-top" alt="Ice Cream Catering" />
+                <div class="card-body">
+                    <h5 class="card-title">Ice Cream Catering</h5>
+                    <p class="card-text">
+                        Let us bring the joy of ice cream to your events! Our catering service is perfect for birthdays, weddings, and corporate events. 
+                        Choose from a variety of flavors and toppings to delight your guests.
+                    </p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="col-md-4 mb-4">
+            <div class="card shadow-sm">
+                <img src="{% static 'path/to/custom-flavors.jpg' %}" class="card-img-top" alt="Custom Flavors" />
+                <div class="card-body">
+                    <h5 class="card-title">Custom Ice Cream Flavors</h5>
+                    <p class="card-text">
+                        Have a flavor idea? We love to experiment! Work with our team to create a unique ice cream flavor tailored just for you. 
+                        Perfect for special occasions or unique requests!
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4 mb-4">
+            <div class="card shadow-sm">
+                <img src="{% static 'path/to/ice-cream-delivery.jpg' %}" class="card-img-top" alt="Ice Cream Delivery" />
+                <div class="card-body">
+                    <h5 class="card-title">Ice Cream Delivery</h5>
+                    <p class="card-text">
+                        Craving ice cream at home? We offer delivery services to bring our delicious ice cream directly to your doorstep! 
+                        Enjoy your favorite flavors without leaving your house.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4 mb-4">
+            <div class="card shadow-sm">
+                <img src="{% static 'path/to/specials.jpg' %}" class="card-img-top" alt="Special Offers" />
+                <div class="card-body">
+                    <h5 class="card-title">Seasonal Specials</h5>
+                    <p class="card-text">
+                        Keep an eye out for our seasonal flavors and special offers! We create limited-time flavors that highlight seasonal ingredients 
+                        to keep our menu fresh and exciting.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4 mb-4">
+            <div class="card shadow-sm">
+                <img src="{% static 'path/to/ice-cream-tasting.jpg' %}" class="card-img-top" alt="Ice Cream Tasting" />
+                <div class="card-body">
+                    <h5 class="card-title">Ice Cream Tasting Events</h5>
+                    <p class="card-text">
+                        Join us for exclusive ice cream tasting events! Sample a variety of our flavors and vote for your favorites. 
+                        A great way to discover new flavors and meet fellow ice cream lovers!
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4 mb-4">
+            <div class="card shadow-sm">
+                <img src="{% static 'path/to/ice-cream-workshop.jpg' %}" class="card-img-top" alt="Ice Cream Making Workshop" />
+                <div class="card-body">
+                    <h5 class="card-title">Ice Cream Making Workshops</h5>
+                    <p class="card-text">
+                        Ever wanted to make your own ice cream? Join our workshops to learn how to make delicious ice cream from scratch! 
+                        A fun activity for families and friends!
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock body %}

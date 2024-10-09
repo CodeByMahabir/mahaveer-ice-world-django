@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+
+{% block title %} About Us {% endblock title %}
+
+{% block body %} 
+
+<div class="container my-5">
+  <h1 class="text-center">About Us</h1>
+  <p class="lead text-center">Welcome to **[MAHAVEER-ICE-WORLD]**, where every scoop is a delightful experience!</p>
+  
+  <h2>Our Story</h2>
+  <p>Founded in **[2024]**, **[MAHAVEER-ICE-WORLD]** started with a passion for crafting the finest ice creams. Our journey began with a simple dream and a few cherished family recipes.</p>
+
+  <h2>Our Mission</h2>
+  <p>At **[MAHAVEER-ICE-WORLD]**, our mission is to bring smiles and happiness through delicious, high-quality ice cream. We believe in using the best ingredients and offering a variety of flavors to satisfy every craving.</p>
+
+  <h2>Our Values</h2>
+  <ul>
+    <li>Quality: We prioritize fresh and natural ingredients.</li>
+    <li>Community: We strive to be a positive part of our community.</li>
+    <li>Customer Satisfaction: Your happiness is our top priority.</li>
+  </ul>
+
+  <h2>Meet Our Team</h2>
+  <p>Our dedicated team is passionate about ice cream and committed to providing the best service to our customers. We work hard every day to create unforgettable experiences!</p>
+
+  <h2>Contact Us</h2>
+  <p>If you have any questions or want to learn more about our ice creams, feel free to <a href="{% url 'contact' %}">contact us</a>.</p>
+</div>
+
+{% endblock body %}

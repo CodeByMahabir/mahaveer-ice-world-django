@@ -1,0 +1,81 @@
+{% extends 'base.html' %} {% block title %} Contact {% endblock title %} 
+{%block body %}
+<div class="container-fluid">
+  <img
+    src="https://media.istockphoto.com/id/538683033/photo/smartphone.jpg?s=1024x1024&w=is&k=20&c=1OaF5L6Br3c5ewXNF4xpKbBk7sZBzfOn-3lMYI9Yl2s="
+    class="d-block w-100 my-4"
+    alt="Smartphone Image"
+    style="height: 300px; object-fit: cover"
+  />
+  <h1 class="text-center">Contact Us</h1>
+
+  <!-- Main container to center form -->
+  <div
+    class="container d-flex justify-content-center align-items-center"
+    style="min-height: 60vh"
+  >
+    <!-- Form with method POST and action to the contact page -->
+    <form method="post" action="/contact">
+      {% csrf_token %}
+      <!-- Name input -->
+      <div class="mb-3">
+        <label for="name" class="form-label">Name</label>
+        <input
+          type="text"
+          class="form-control"
+          id="name"
+          name="name"
+          placeholder="Enter Your Name"
+          required
+        />
+      </div>
+
+      <!-- Email input -->
+      <div class="mb-3">
+        <label for="email" class="form-label">Email Address</label>
+        <input
+          type="email"
+          class="form-control"
+          id="email"
+          name="email"
+          placeholder="Enter Your Email"
+          required
+        />
+      </div>
+
+      <!-- Phone number input -->
+      <div class="mb-3">
+        <label for="phone" class="form-label">Phone Number</label>
+        <input
+          type="text"
+          class="form-control"
+          id="phone"
+          name="phone"
+          placeholder="Enter Your Phone Number"
+          required
+        />
+      </div>
+
+      <!-- Text area -->
+      <div class="mb-3">
+        <label for="exampleTextarea" class="form-label"
+          >Tell me About What you Want to Contact me For....</label
+        >
+        <textarea
+          class="form-control"
+          id="exampleTextarea"
+          name="message"
+          rows="3"
+          placeholder="Enter your message here"
+          required
+        ></textarea>
+      </div>
+
+      <!-- Centered Submit button -->
+      <div class="d-flex justify-content-center">
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </div>
+    </form>
+  </div>
+</div>
+{% endblock body %}
